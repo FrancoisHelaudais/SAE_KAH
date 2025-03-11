@@ -41,7 +41,7 @@ uint8_t CalculerDonneeNEC(uint16_t Vitesse, uint16_t Direction) { // retourne un
 //  ...             // à compléter
 //  return ... ;    // à compléter
 }
-
+éqézqzéq
 // definition des fonctions de traitement
 uint8_t CalculerAdresseNEC(uint8_t Klaxon) { // retourne un octet (8 bits) : Klaxon sur le MSB, NumeroEquipe sur les 7 LSB
 //  ...             // à compléter
