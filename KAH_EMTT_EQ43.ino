@@ -26,7 +26,7 @@ uint16_t AcquerirPotentiometreVitesse(void) {     // retourne une valeur : [ ? ;
 }
 
 uint16_t AcquerirPotentiometreDirection(void) {   // retourne une valeur : [ ? ; ? ]
-  uint16_t direction = map(analogRead(PotentiometreDirection_Pin), 0, 1024, 0, 2);             // à compléter
+  uint16_t direction = map(analogRead(PotentiometreDirection_Pin), 0, 1024, -100, 100);             // à compléter
   return direction ;    // à compléter
 }
 
@@ -38,7 +38,7 @@ uint8_t AcquerirBoutonPoussoir() {                // retourne : 0 (BP relaché),
 
 // definition des fonctions de traitement
 uint8_t CalculerDonneeNEC(uint16_t Vitesse, uint16_t Direction) { // retourne un octet (8 bits) : Vitesse sur les 4 MSB, Direction sur les 4 LSB
-//  ...             // à compléter
+//  Direction = map(Direction, -100, 100,)
 //  return ... ;    // à compléter
 }
 
